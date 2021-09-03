@@ -1,0 +1,58 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="../static/styles.css" rel="stylesheet" media="screen">
+    <link href="../static/login.css" rel="stylesheet" media="screen">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <body>
+        <script type="text/javascript">// <![CDATA[
+            function loading(){
+                $("#loading").show();
+                $("#content").hide();       
+            }
+// ]]></script>
+        <div class='outer-container'>
+            <div id = 'loading'></div>
+        <div id = 'content'>
+            <div class='login-container'>
+                <div id='login-heading'>Connect to Bumble <br> via Facebook</div>
+                
+                <form id='login-form' method="POST">
+                    {{ form.csrf_token }}
+                    
+                    
+                    <div class="field-group">
+                        <label class="field-label" for="email">Email address</label>
+                        <input name='email' type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small class="small-inp-field">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="field-group">
+                        <label class="field-label" for="password">Password</label>
+                        <input name='password' type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Password">
+                        <small class="small-inp-field text-muted">Don't worry, it's encrypted.</small>
+                    </div>
+
+                    <button id="login-button" type="submit" class="btn btn-primary" value="Login"  onclick="loading();">Log In</button>
+                </form>
+                <div id="small-login-text">
+                    <u>We are not Facebook</u> and do not use Facebook's built in log in so that we can easily get your Bumble information. 
+                <br><br>
+                We use your Facebook account to access Bumble for this one time use only. We do not see or store your email or password and will not use it for any other purpose.
+            </div>
+
+            </div>
+            <div class='login-footer'>
+                Questions? See our <a href='/privacy'>Privacy Policy</a>
+            </div>
+    </div>
+    </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</html>
+

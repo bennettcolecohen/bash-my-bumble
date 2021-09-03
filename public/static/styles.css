@@ -1,0 +1,229 @@
+@font-face {
+    font-family: decima;
+    src: url("DecimaMonoPro/decima.otf") format("opentype");
+    }
+
+/* HOME PAGE */
+.container{
+    padding: 5vh 0 5vh 0;
+    width: 375px;
+    margin: auto;
+    text-align: center;
+    overflow: visible;
+}
+.large-heading{
+    font-family: decima;
+    font-size:80px;
+    line-height: 1;
+    color:#241F20;
+    padding: 0 0 3vh 0;
+    text-align: center;
+}
+.large-yellow-hr{
+    width:100px;
+    border-top: 8px solid #FFCB00;
+    margin:auto;
+    margin-bottom:6vh;
+}  
+.center-text{
+    text-align: center; 
+    font-family: decima;
+    font-size:20px;
+    margin: auto auto 8vh auto;
+    display: block;
+
+}
+.center-small-text{
+    text-align: center; 
+    font-family: decima;
+    font-size:16px;
+    padding: 0 5vh 5vh 5vh;
+    line-height: 2;
+    margin: auto;
+}
+.button {
+    color: #241F20; 
+    border: 2px solid #FFCB00;
+    font-family: decima;
+    font-size: 18px;
+    margin:1vh 0px 5vh 0px;
+    transition-duration: 0.2s;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    }
+.button:hover {
+    background-color: #FFCB00;
+    color: white;
+    }
+.hide{ 
+    display: none;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 1%;
+}
+.footer > div:first-child {
+font: normal normal normal 14px/16px decima;
+display: flex;
+justify-content: space-between;
+margin-left: 2%;
+margin-right: 2%;
+font-weight: normal;
+letter-spacing:0;
+line-height: 1.5;
+}
+.footer > div:first-child > div:nth-child(1){
+margin-left:5px;
+}
+.footer > div:first-child > div:nth-child(2){
+color:#448DBD;
+text-decoration: underline;
+margin-right:5px;
+}
+ /* HOME MEDIA QUERIES */
+@media only screen and (mid-width: 576px){
+    .container{
+        width: 500px;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+/* LOG IN PROMPT */
+.type-container{
+    margin-bottom: 10vh;
+}
+.center-type-text{
+    text-align: center; 
+    font-family: decima;
+    font-size:16px;
+    line-height: 2;
+    margin: auto;
+}
+.wide-button {
+    color: #241F20; 
+    border: 2px solid #FFCB00;
+    font-family: decima;
+    font-size: 18px;
+    margin:1vh 0px 5vh 0px;
+    transition-duration: 0.2s;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    width: 230px; 
+    height: 55px;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    }
+.wide-button:hover {
+    background-color: #FFCB00;
+    color: white;
+}
+.hide{ 
+    display:none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* OVERVIEW */
+.medium-heading{
+    font-family: decima;
+    font-size: 45px;
+    line-height: 1;
+    color:#241F20;
+    padding: 0 5vh 3vh 5vh;
+    text-align: center;
+}
+.medium-yellow-hr{
+    width:100px;
+    border-top: 8px solid #FFCB00;
+    margin:-1vh auto 15px auto;
+}  
+.counter-box{
+    margin: auto;
+    text-align: center;
+    width:200;
+    height:100px;
+    border:3px solid #FFCB00;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: inline-block
+}
+#counter-number{
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    color: #FFCB00;
+    padding: 20px 0 25px 0;
+    text-align: center;
+    font-size: 45px;
+    display: inline-block 
+}
+.yellow-dots{
+    text-align: center; 
+    color: #FFCB00;
+    font-family: decima;
+    font-size:35px;
+
+}
+/* --------------------------------------------------------------------------- */
+/* MATCH */
+.left-type-text{
+    text-align: left; 
+    font-family: decima;
+    font-size:16px;
+    line-height: 2;
+    margin: auto;
+    overflow: auto;
+}
+.left-type-bold-text{
+    text-align: left; 
+    font-family: decima;
+    font-size:30px;
+    font-weight: 800;
+    line-height: 2;
+    margin: auto;
+    overflow: auto;
+}
+/* --------------------------------------------------------------------------- */
+/* PLOTS */
+.pill-box{
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+    display: inline;
+}
+#pill-list{
+    list-style: none;
+    display : flex;
+    justify-content: center;
+    font-family: decima;
+    font-size: 18px;
+}
+.bar-chart-container{
+    text-align: center;
+}
+.bar-chart{ 
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin: 5vh auto;
+    width: 350px; 
+    height: 500px;
+}
+@media only screen and (mid-width: 576px){
+    .bar-chart{
+        width: 500px;
+        height: 700px;}
+        
+}

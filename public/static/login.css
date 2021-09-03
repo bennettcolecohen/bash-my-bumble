@@ -1,0 +1,85 @@
+.outer-container{
+    width: 400px; 
+    height: 575px;
+    margin: 0 auto;
+}
+.login-container{
+    width: 400px;
+    margin: 5% auto;
+    padding:1px;
+    box-shadow: 5px 10px 6px #00000029;
+    background: #4267B2 0% 0% no-repeat padding-box;
+    
+}
+#login-heading{
+    font-family: "Helvetica Neue";
+    font-size:30px;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    padding-top: 3vh;
+}
+#login-form{
+    text-align:left;
+    width: 360px;
+    height: 310px;
+    margin:10px auto;
+    background: var(--unnamed-color-f9f9fa) 0% 0% no-repeat padding-box;
+    background: #F9F9FA 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    padding:22px;
+    color:#373A3C;
+}
+.field-group{
+    margin-bottom:12px;
+}
+.field-label{
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    margin-bottom: 2%;
+    letter-spacing: 0px;
+    color: #373A3C;
+    opacity: 1;
+}
+.small-inp-field{
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height:2;
+    color: #6e767d;
+    opacity: 1;
+}
+
+#login-button{
+    width:100%;
+    background: #4267B2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font: normal normal normal 20px;
+}
+#small-login-text{
+    text-align: center;
+    font-size:12px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #F9F9FA;
+    opacity: 1;
+    margin: 20px 40px 2vh;
+}
+.login-footer{
+    font-family: "Helvetica Neue";
+    text-align: center;
+    font-size:15px;
+    letter-spacing: 0px;
+}
+div#loading {
+    width: 100px;
+    height: 100px;
+    display: none;
+    background: url(/static/loader.gif) no-repeat;
+    cursor: wait;
+    align-items: center; 
+    text-align: center;
+    margin: 0 auto; 
+    }

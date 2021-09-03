@@ -1,0 +1,16 @@
+
+
+{% block title %}Login Form{% endblock %}
+
+{% block content %}
+    <form method="POST">
+    {{ form.csrf_token }}
+    <p>
+       Email: {{ form.email }}
+    </p>
+    <p>
+       Password{{ form.password }}
+    </p>
+      <input type="submit" value="Login">
+    </form>
+{% endblock %}

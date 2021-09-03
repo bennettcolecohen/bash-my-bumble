@@ -1,0 +1,44 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="../static/js/showButton.js"></script>
+    <link type = "text/css" href="../static/styles.css" rel="stylesheet" media="screen">
+    <body>
+        <div class='container'> 
+            <div class='medium-heading'>Overview</div>
+            <hr class='medium-yellow-hr'></hr>
+
+            <div class='counter-box'>
+                <div class="counter" id='counter-number' data-target = {{len(match_df)}} >0</div>
+                <div class='center-text'>Total Matches</div>
+            <!-- </div>
+            <div class='counter-box'>
+                <div class="counter" id='counter-number' data-target="984">0</div>
+                <div class='center-text'>Total Messages</div>
+            </div>
+            <div class='counter-box'>
+                <div class="counter" id='counter-number' data-target="160">0</div>
+                <div class='center-text'>Expired Matches</div>
+            </div>
+
+            <div class="center-type-text">
+                <div id="overview"></div>
+            </div> -->
+
+            <a href="/match" class="button hide" id="next-button" style='margin-top: 30px'>Continue</a>
+                
+        </div>
+        
+        
+
+        
+    <script src="https://code.jquery.com/jquery.js"></script>   
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/counter.js"></script>
+    <script src="../static/js/typewriter.js"></script>
+    </body>
+</html>
