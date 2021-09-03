@@ -19,5 +19,6 @@
   "homepage": "https://github.com/bennettcolecohen/bash-my-bumble#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
