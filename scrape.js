@@ -4,8 +4,9 @@ const { filter } = require('cheerio/lib/api/traversing');
 const fs = require('fs');
 
 
-
-(async () => {
+const email = 'bchezin@aol.com'; 
+const password = 'namantestpass123';
+(async function getData(email, password) {
 
     console.time();
 
@@ -29,8 +30,8 @@ const fs = require('fs');
     // Logging into Facebook
     await page.goto('https://www.facebook.com/login?skip_api_login=1'); 
     await page.waitFor(1000); 
-    await page.type('#email', 'bchezin@aol.com'); 
-    await page.type('#pass', 'namantestpass123'); 
+    await page.type('#email', email); 
+    await page.type('#pass', password); 
     await page.keyboard.press('Enter');
     await page.waitFor(2500); 
     await page.goto('https://bumble.com/app/connections'); 
@@ -230,6 +231,7 @@ const fs = require('fs');
 
 
     console.timeEnd();
+    return randomString
 })();
 
 async function autoScroll(page){
