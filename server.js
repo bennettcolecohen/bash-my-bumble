@@ -1,14 +1,16 @@
 // Load Node modules
 var express = require('express');
 const ejs = require('ejs');
-// Initialise Express
 var app = express();
-// Render static files
+const bodyParser = require('body-parser'); 
+
+// Middleware / Routing 
+app.use(bodyParser.urlencoded({ extended: true})); 
 app.use(express.static('public'));
-// Set the view engine to ejs
 app.set('view engine', 'ejs');
-// Port website will run on
-app.listen(8080);
+app.listen(8080, function(){ 
+    console.log("Server running on port 8080");
+});
 
 // *** GET Routes - display pages ***
 
@@ -18,6 +20,19 @@ app.get('/', function (req, res) {
 });
 
 // LOGIN PROMPT
-app.get('/', function (req, res) {
-    res.render('pages/login_prompt');
+app.get('/prompt', function (req, res) {
+    res.render('pages/prompt');
+});
+
+// FACEBOOK LOG IN 
+app.get('/fblogin', function (req, res) {
+    res.render('pages/fblogin');
+}); 
+
+// FACEBOOK LOG IN POST REQUEST
+app.post('/fblogin', (req, res) => {
+    // Insert Login Code Here
+    let email = req.body.email;
+    let password = req.body.password;
+    res.send(`Username: ${email} Password: ${password}`);
 });
